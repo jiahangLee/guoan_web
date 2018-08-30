@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.login-page {
+  //min-width: 850 px;
+  background: #f0f5f8;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.login-box {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 400px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.login-form {
+
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 24px;
+  height: 80px;
+
+}
+.red {
+  background-color:#bd1a23 ;
+}
+.login-form .ant-input {
+  height: 44px;
+  border-radius: 0;
+}
+
+.login-form .ant-btn {
+  height: 44px;
+  width: 100%;
+  border-radius: 0;
+}
+
+@media (max-width: 767px) {
+  .login-page,
+  .login-box {
+    background-color: transparent;
+    width: 100%;
+    padding: 10px;
+  }
+}

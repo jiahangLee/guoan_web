@@ -1,0 +1,50 @@
+{
+  "entry": ["src/index.js"],
+  "disableCSSModules": true,
+  "autoprefixer": {
+      "browsers": ["ie >= 9"]
+  },
+  "proxy": {
+    "/api": {
+      "target": "http://localhost:4401/",
+      "changeOrigin": true,
+      "pathRewrite": { "^/api" : "" }
+    }
+  },
+  "theme": "./src/theme.zxred.js",
+  "extraBabelPlugins": [
+    "transform-decorators-legacy",
+    ["transform-class-properties", { "spec": true }],
+    "transform-es2015-block-scoping",
+    ["transform-es2015-classes", {"loose": true}],
+    "transform-proto-to-assign",
+    "transform-es2015-modules-commonjs",
+    "transform-runtime",
+    ["module-resolver", {
+               "alias": {
+               "dva": "dva-react-router-3"
+              }
+    }],
+    ["import", { "libraryName": "antd", "style": "true" }]
+  ],
+  "extraBabelPresets":["react","stage-0","es2015-ie"],
+  "env": {
+    "development": {
+      "extraBabelPlugins": [
+        "dva-hmr",
+        "transform-decorators-legacy",
+            ["transform-class-properties", { "spec": true }],
+            "transform-es2015-block-scoping",
+            ["transform-es2015-classes", {"loose": true}],
+            "transform-proto-to-assign",
+            "transform-es2015-modules-commonjs",
+        "transform-runtime",
+        ["module-resolver", {
+           "alias": {
+           "dva": "dva-react-router-3"
+          }
+        }]
+      ]
+    }
+  }
+}

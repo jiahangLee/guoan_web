@@ -1,0 +1,36 @@
+
+.normal {
+  background-color: #fff;
+  width: 1050px;
+}
+
+.create {
+  float: left;
+  margin-bottom: 2em;
+  margin-left: 2em;
+
+}
+
+.delete1{
+  float: left;
+  margin-bottom: 1.5em;
+  margin-left:1em;
+
+}
+.operation a {
+  margin: 0 .5em;
+  color: #108ee9;
+}
+.search{
+  width: 52em;
+  float: left;
+  margin-left:4em ;
+}
+.page{
+  margin-top: 16px ;
+  margin-bottom: 16px ;
+  margin-right: 10px ;
+  float: right;
+
+}
+
